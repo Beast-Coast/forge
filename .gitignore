@@ -427,3 +427,58 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Windows thumbnail caches
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Windows folder config file
+Desktop.ini
+
+# macOS folder attributes and indexing
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux trash and swap files
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Avalonia-specific generated files
+*.axaml.g.cs
+
+# Rider cache
+.rider/
+
+# Out directory (Rider)
+out/
+
+# JBR (JetBrains Runtime) crash logs
+jbr_err_pid*.log
+jbr_err_pid*.dmp
+
+# Logs
+*.log
+
+# Crash dumps
+*.stackdump
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+
