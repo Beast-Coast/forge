@@ -7,5 +7,5 @@ public enum TemplateValueKind
     Text,
     Number,
     Boolean,
-    DateTime
+    DateTimeOffset
 }
