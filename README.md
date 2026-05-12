@@ -1,3 +1,3 @@
 # forge
 
-A headless XAML generation engine.
+Data contracts for Forge, layouts, widgets, containers, resuable components and community widget templates.
