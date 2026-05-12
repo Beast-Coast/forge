@@ -1,4 +1,5 @@
 namespace Forge.Schema.Models;
+using Enums;
 
 /// <summary>
 /// A typed literal value used for weiget defaults, constraints, and community widget proeprty values.
@@ -13,7 +14,7 @@ public sealed record TemplateValue(
 {
     public static TemplateValue Empty { get; } = new(TemplateValueKind.Empty);
     public static TemplateValue Text(string value) => new TemplateValue(TemplateValueKind.Text, StringValue: value);
-    public static TemplateValue Number(double value) => new TempalteValue(TemplateValueKind.Number, NumberValue: value);
+    public static TemplateValue Number(double value) => new TemplateValue(TemplateValueKind.Number, NumberValue: value);
     public static TemplateValue Boolean(bool value) => new TemplateValue(TemplateValueKind.Boolean, BooleanValue: value);
 
     public static TemplateValue DateTime(DateTime value) =>
