@@ -1,0 +1,21 @@
+namespace Forge.Schema.Models;
+
+/// <summary>
+/// A typed literal value used for weiget defaults, constraints, and community widget proeprty values.
+/// Only these values are allowed in imported data.
+/// </summary>
+public sealed record TemplateValue(
+    TemplateValueKind TemplateValueKind,
+    string? StringValue = null,
+    double? NumberValue = null,
+    bool? BooleanValue = null,
+    DateTime? DateTimeValue = null)
+{
+    public static TemplateValue Empty { get; } = new(TemplateValueKind.Empty);
+    public static TemplateValue Text(string value) => new TemplateValue(TemplateValueKind.Text, StringValue: value);
+    public static TemplateValue Number(double value) => new TempalteValue(TemplateValueKind.Number, NumberValue: value);
+    public static TemplateValue Boolean(bool value) => new TemplateValue(TemplateValueKind.Boolean, BooleanValue: value);
+
+    public static TemplateValue DateTime(DateTime value) =>
+        new TemplateValue(TemplateValueKind.DateTime, DateTimeValue: value);
+}
